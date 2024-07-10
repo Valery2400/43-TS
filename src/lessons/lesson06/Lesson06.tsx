@@ -65,6 +65,12 @@ interface IAnimal {
     name: string;
     kind: string;
 }
+const shark:IAnimal = {
+  name: "Bobby",
+  kind: "shark",
+}
+
+console.log(shark);
 
 const tom:IUser = {
     name: 'Tom',
