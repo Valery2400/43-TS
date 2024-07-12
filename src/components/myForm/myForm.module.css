@@ -1,4 +1,5 @@
 .myForm {
+  width: 300;
   display: flex;
   flex-direction: column;
   align-items: center;
