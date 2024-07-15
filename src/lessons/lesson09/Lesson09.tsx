@@ -1,7 +1,7 @@
 import { log } from "console"
 import { useEffect } from "react"
 
-export default function Lesson09() {
+function Lesson09() {
 
     // console.log(fetch('https://dog.ceo/api/breeds/image/random'));
     
@@ -20,3 +20,4 @@ export default function Lesson09() {
         </div>
     )
 }
+export default Lesson09;
