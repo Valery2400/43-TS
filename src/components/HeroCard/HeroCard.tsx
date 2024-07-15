@@ -2,7 +2,7 @@ import styles from "./HeroCard/HeroCard.module.css"
 interface IHeroCard {
     name: string
     age: number
-    img: string
+    img: string,
     isDark: boolean,
     lightsaberColors: string[],
     image: string
