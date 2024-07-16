@@ -47,7 +47,8 @@ function Homework09() {
     setCount(prev => prev - 1);
   };
   const handleReset = () => {
-    setCount(prev => prev = 0);
+    fetchFox()
+    setCount(prev => 0);
   };
 
 
@@ -57,10 +58,10 @@ function Homework09() {
      <p className='counter'>{count}</p>
       <div className='buttonBlock'>
       <MyButton name={'-'} onClick={handleMinus} />
-      <MyButton name={'reset counter'} onClick={handleReset} />
+      <MyButton name={'reset counter and new fox'} onClick={handleReset} />
       <MyButton name={'+'} onClick={handlePlus} />
       </div>
-      <img width={120} src={fox.image} alt="" />
+      <img width={200} src={fox.image} alt="" />
       
     </div>
   );
