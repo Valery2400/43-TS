@@ -1,7 +1,7 @@
 import styles from "./starWarsGallery.module.css";
 
 import { forceUsers } from "./data";
-import HeroCard from '../heroCard/HeroCard';
+import HeroCard from '../HeroCard/HeroCard';
 export default function StarWarsGallery() {
   return (
     <div className="lesson-container">
