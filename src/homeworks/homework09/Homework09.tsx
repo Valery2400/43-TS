@@ -55,7 +55,7 @@ function Homework09() {
   return (
     <div className='lesson-container'>
       <h3>Homework 09</h3>
-     <p className='counter'>{count}</p>
+     <p className={styles.counter}>{count}</p>
       <div className='buttonBlock'>
       <MyButton name={'-'} onClick={handleMinus} />
       <MyButton name={'reset counter and new fox'} onClick={handleReset} />

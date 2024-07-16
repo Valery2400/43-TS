@@ -6,6 +6,7 @@ console.log(styles);
 
 
 interface IMyButtonProps {
+  id?: string | number;
   type?: "button" | "submit" | "reset";
   onClick?: () => void;
   name?: string;
