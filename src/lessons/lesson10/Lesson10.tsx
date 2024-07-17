@@ -41,7 +41,7 @@ export default function Lesson10() {
       <h3>Cat Facts</h3>
       <div className={style.bottonBlock}>
       <MyButton name={"GET MORE INFO"} onClick={handleMoreInfo} />
-      <MyButton id = {`${catFacts.length = 0} ? ${style.buttonDeleteInvisible} : ${style.buttonDelete}`} name={"DELETE ALL DATA"} onClick={handleDaleteAll} />
+      <MyButton name={"DELETE ALL DATA"} onClick={handleDaleteAll} />
       </div>
       <div className={style.catFactsContainer}>
       <ol>

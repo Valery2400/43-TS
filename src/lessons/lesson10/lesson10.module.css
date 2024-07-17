@@ -9,6 +9,7 @@
 
     .bottonBlock {
         display: flex;
+        font-size: 10px;
     }
 
     .buttonDelete {
