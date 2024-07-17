@@ -1,7 +1,7 @@
-.heading {
-    /* visibility: hidden; */
-    /* display: none; */
-}
+/* .heading {
+    visibility: hidden;
+    display: none;
+} */
 
 
 .loader {
@@ -20,7 +20,7 @@
     /* если тег занимает место в версте - он продолжит занимать его */
     /* visibility: hidden; */
     /* прячет тег из dom дерева и овобождает мето в верстке*/
-    /* display: none;  */
+    display: none; 
   }
   
   @keyframes rotation {
@@ -32,8 +32,6 @@
       transform: rotate(360deg);
     }
   }
-  
-  
   
   
   

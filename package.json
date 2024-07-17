@@ -12,6 +12,7 @@
     "@types/node": "^16.18.101",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "formik": "^2.4.6",
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -24,9 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"npm run build && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "lazy": "git add . && git commit -m 'lazy' && git push"
-    
   },
   "eslintConfig": {
     "extends": [
