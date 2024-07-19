@@ -1,15 +1,31 @@
 .loginForm {
     display: flex;
     flex-direction: column;
-
 }
 
 .loginForm input {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .loginForm > button {
     background-color: rgb(246, 177, 66);
     border: none;
 }
+
+.errorContainer {
+    top: 8px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.74);
+    color: white;
+}
+.errorContainer.span {
+    font-size: 8px;
+}
+
 

@@ -22,3 +22,10 @@ code {
   align-items: center;
   width: 70%;
 }
+
+header > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: blueviolet
+  
+}

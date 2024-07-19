@@ -1,14 +1,12 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
-import styles from "./layout.module.css";
+import React from 'react'
+import styles from "./header.module.css"
+import { Link } from 'react-router-dom'
 
-function Layout() {
-  const location = useLocation()
-  console.log(location.pathname);
-  
+export default function Header() {
   return (
-    
-    <div className={styles.page}>
-      <header className={styles.header}> 
+    <header className={styles.header}> 
+        <p>
+       
       <Link className={location.pathname === '/homepage' ? styles.active : ''} to={'/homepage'}>Home page</Link>
         <Link className={location.pathname === '/star-wars-gallery' ? styles.active : ''} to={'/star-wars-gallery'}>starwars gallery</Link>
         <Link className={location.pathname === '/gender-form' ? styles.active : ''}to={'/gender-form'}>gender form</Link>
@@ -17,15 +15,8 @@ function Layout() {
         <Link className={location.pathname === '/counter' ? styles.active : ''}to={'/counter'}>counter</Link>
         <Link className={location.pathname === '/feedback' ? styles.active : ''}to={'/feedback'}>feedback</Link>
 
-      </header>
-
-      <main className={styles.main}>  
-      <Outlet/>
-      </main>
-      <footer className={styles.footer}> footer </footer>
-   
-    </div>
-    
-  );
+      
+        </p>
+    </header>
+  )
 }
-export default Layout;
