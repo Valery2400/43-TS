@@ -3,8 +3,6 @@ interface ILinks {
   title: string;
 }
 
-import { title } from "process";
-
 export const links: ILinks[] = [
   {
     pathname: "/",
@@ -33,5 +31,9 @@ export const links: ILinks[] = [
   {
     pathname: '/feedback',
     title: "feedback",
+  },
+  {
+    pathname: '/shop',
+    title: "shop",
   },
 ];

@@ -10,7 +10,7 @@ export default function Header() {
     <header className={styles.header}> 
         <p>
        {links.map((el,index) => (
-           <Link className={location.pathname === el.pathname ? styles.active : ''} 
+           <Link key={index} className={location.pathname === el.pathname ? styles.active : ''} 
            to={el.pathname}>{el.title}</Link>
        ))}
              
