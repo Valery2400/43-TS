@@ -35,7 +35,10 @@ root.render(
         <Route path='/my-form' element={<MyForm/>}/>
         <Route path='/counter' element={<Counter/>}/>
         <Route path='/feedback' element={<Feedback/>}/>
-        <Route path='/homepage' element={<Homepage/>}/>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/new' element={<h3>New Component</h3>}/>
+        <Route path='*' element={<h1>Error 404</h1>}/>
+
     {/* <App /> */}
     {/* <Lesson06/> */}
     {/* <Lesson07/> */}
