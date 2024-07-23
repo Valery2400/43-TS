@@ -6,17 +6,7 @@
 
 
 
-.header > a {
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    margin-right: 20px;
-}
-.header > a:hover {
-   
-    text-decoration: underline;
-  color:blueviolet;
-}
+
 
 .main {
     padding: 20px 0;

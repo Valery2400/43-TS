@@ -10,9 +10,9 @@ interface IFormGender {
 export default function FormGender() {
   const schema = Yup.object().shape({
     name: Yup.string()
-      .required("скажи name")
-      .min(3, "name должно быть больше 2")
-      .typeError("введи name for gender"),
+      .required(" скажи name ")
+      .min(3, " name должно быть больше 2 ")
+      .typeError(" введи name for gender "),
   });
 
   const [gender, setGender] = useState("");
@@ -31,7 +31,6 @@ export default function FormGender() {
         .then((data) => {
           setGender(data.gender);
           setNameOut(data.name);
-          console.log(data);
           resetForm();
         });
     },
@@ -58,7 +57,7 @@ export default function FormGender() {
       )}
     </form>
     <div className={styles.errorContainer}>
-    <span className={styles.formErrors}>{formik.errors.name}</span>
+    <span>{formik.errors.name}</span>
     </div>
     </>
   );

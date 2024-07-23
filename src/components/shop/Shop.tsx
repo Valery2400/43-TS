@@ -52,7 +52,7 @@ export default function Shop() {
             </div>
             <img src={el.image} alt={el.title} />{" "}
           
-          <div className={styles.price}> {el.price} tugriks </div>
+          <div className={styles.price}> {el.price} ₮ </div>
           </div>
         ))}
       </div>

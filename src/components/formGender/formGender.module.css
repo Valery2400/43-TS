@@ -13,19 +13,20 @@
 }
 
 .errorContainer {
-    top: 160px;
-    left: 205px;
+    top: auto;
+    left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 200px;
-    height: 20px;
+    position:relative;
+    width: auto;
+    height: auto;
     background-color: rgba(255, 0, 0, 0.74);
     color: white;
 }
 .errorContainer.span {
-    font-size: 8px;
+    font-size: 4px;
+    padding: 10px;
 }
 
 
