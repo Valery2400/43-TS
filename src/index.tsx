@@ -21,6 +21,7 @@ import Counter from './components/counter/Counter';
 import Feedback from './components/feedback/Feedback';
 import Homepage from './components/homepage/Homepage';
 import Shop from './components/shop/Shop';
+import ProductPage from './components/productPage/ProductPage';
 
 
 const root = ReactDOM.createRoot(
@@ -39,6 +40,8 @@ root.render(
         <Route path='/' element={<Homepage/>}/>
         <Route path='/new' element={<h3>New Component</h3>}/>
         <Route path='/shop' element={<Shop/>}/>
+        {/* импотрируем компонент, указав в path параметр id через двоеточие */}
+        <Route path='/shop/:id/' element={<ProductPage/>}/>
         <Route path='*' element={<h1>Error 404</h1>}/>
 
     {/* <App /> */}

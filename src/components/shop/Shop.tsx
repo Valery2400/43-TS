@@ -1,8 +1,8 @@
-// ## задание
-
 import { useEffect, useState } from "react";
 import { number, string } from "yup";
 import styles from "./shop.module.css";
+import ProductCard from "../productCard/ProductCard";
+import Loader from "../loader/Loader";
 
 // 1. Создайте новый компонент Shop.tsx.
 // 2. В нем сделайте fetch запрос на `https://fakestoreapi.com/products` с данными о продуктах
@@ -10,21 +10,19 @@ import styles from "./shop.module.css";
 // 4. Вынесите карточку с данными о продукте в отдельный компонент ProductCard.tsx
 // и данные прокидывайте через props.
 // https://fakestoreapi.com/products
-
+export interface IProduct {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
 export default function Shop() {
-  interface IProduct {
-    id: number;
-    title: string;
-    price: number;
-    description: string;
-    category: string;
-    image: string;
-    rating: {
-      rate: number;
-      count: number;
-    };
-  }
-
   const [products, setProducts] = useState<IProduct[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -38,22 +36,26 @@ export default function Shop() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   }
 
   return (
     <>
       <h3>Shop</h3>
+
       <div className={styles.productGrid}>
         {products.map((el) => (
-          <div className={styles.card} key={el.id}>
-            <div className={styles.namecard}>
-              <h4>{el.title} </h4>
-            </div>
-            <img src={el.image} alt={el.title} />{" "}
-          
-          <div className={styles.price}> {el.price} ₮ </div>
-          </div>
+          <ProductCard
+            key={el.id}
+            id={el.id}
+            title={el.title}
+            price={el.price}
+            image={el.image}
+          />
         ))}
       </div>
     </>

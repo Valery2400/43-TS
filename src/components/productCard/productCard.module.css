@@ -1,0 +1,26 @@
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .namecard {
+    align-items: center;
+    margin-bottom: 0;
+    font-size: small;
+    width: 200px;
+    height: 100%;
+
+  }
+  .price {
+    color: rgb(48, 118, 18);
+    font-size: large;
+    
+  }
+  
