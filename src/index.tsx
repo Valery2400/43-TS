@@ -22,12 +22,15 @@ import Feedback from './components/feedback/Feedback';
 import Homepage from './components/homepage/Homepage';
 import Shop from './components/shop/Shop';
 import ProductPage from './components/productPage/ProductPage';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  <Provider store={store}>
   <HashRouter>
     <Routes>
       <Route path ='/' element={<Layout />}>
@@ -58,6 +61,7 @@ root.render(
      </Route>
      </Routes>
   </HashRouter>
+  </Provider>
 );
 
 
