@@ -1,10 +1,10 @@
+import Consultation_07 from '../consultation_07/Consultation_07';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, typescript react ⛵</h1>
-    
+      <Consultation_07/>
     </div>
   );
 }
