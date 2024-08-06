@@ -17,3 +17,6 @@
   text-decoration: underline;
   color: blueviolet;
 }
+.header > span {
+  margin-right: 10px;
+}

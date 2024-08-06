@@ -35,7 +35,7 @@ function Consultation_07() {
   const getJokes = async () => {
     try {
       const result = await axios.get(RANDOM_JOKE_URL);
-      console.log(result);
+      // console.log(result);
 
       setJoke(`${result.data.setup} - ${result.data.punchline}`);
     } catch (error) {

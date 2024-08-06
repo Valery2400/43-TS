@@ -30,36 +30,36 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  // <Provider store={store}>
-//     <HashRouter>
-//       <Routes>
-//         <Route path="/" element={<Layout />}>
-//           <Route path="/star-wars-gallery" element={<StarWarsGallery />} />
-//           <Route path="/gender-form" element={<FormGender />} />
-//           <Route path="/robot-form" element={<RobotForm />} />
-//           <Route path="/my-form" element={<MyForm />} />
-//           <Route path="/counter" element={<Counter />} />
-//           <Route path="/feedback" element={<Feedback />} />
-//           <Route path="/" element={<Homepage />} />
-//           <Route path="/new" element={<h3>New Component</h3>} />
-//           <Route path="/shop" element={<Shop />} />
-//           {/* импотрируем компонент, указав в path параметр id через двоеточие */}
-//           <Route path="/shop/:id/" element={<ProductPage />} />
-//           <Route path="*" element={<h1>Error 404</h1>} />
+  <Provider store={store}>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/star-wars-gallery" element={<StarWarsGallery />} />
+          <Route path="/gender-form" element={<FormGender />} />
+          <Route path="/robot-form" element={<RobotForm />} />
+          <Route path="/my-form" element={<MyForm />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/new" element={<h3>New Component</h3>} />
+          <Route path="/shop" element={<Shop />} />
+          {/* импотрируем компонент, указав в path параметр id через двоеточие */}
+          <Route path="/shop/:id/" element={<ProductPage />} />
+          <Route path="*" element={<h1>Error 404</h1>} />
 
-          <App /> 
-//           {/* <Lesson06/> */}
-//           {/* <Lesson07/> */}
-//           {/* <Layout/> */}
-//           {/* <StarWarsGallery/> */}
-//           {/* <Lesson09/> */}
-//           {/* <Homework09/> */}
-//           {/* <Lesson11/> */}
-//           {/* <Lesson12/> */}
-//           {/* <Consultation_04/> */}
-//           {/* <Lesson13 /> */}
-//         </Route>
-//       </Routes>
-//     </HashRouter>
-//   </Provider>
+          {/*  <App />  */}
+          {/* <Lesson06/> */}
+          {/* <Lesson07/> */}
+          {/* <Layout/> */}
+          {/* <StarWarsGallery/> */}
+          {/* <Lesson09/> */}
+          {/* <Homework09/> */}
+          {/* <Lesson11/> */}
+          {/* <Lesson12/> */}
+          {/* <Consultation_04/> */}
+          {/* <Lesson13 /> */}
+        </Route>
+      </Routes>
+    </HashRouter>
+  </Provider>
 );
